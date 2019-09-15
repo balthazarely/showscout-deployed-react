@@ -1,0 +1,301 @@
+.App {
+  text-align: center;
+}
+.menu{
+  height: 60px;
+  opacity: 0;
+}
+
+.logoPlacer {
+  margin-top: 30px;
+  height: 85px;
+  width: auto;
+}
+.logoPlacer2 {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  height: 40px;
+  width: auto;
+}
+
+.content-holder{
+  margin: -70px 80px 0px 80px;
+}
+
+body {
+  background-image: url("/background2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.header {
+  margin-top: 40px;
+  height: 110px;
+}
+
+.search-form {
+  margin: 10px;
+}
+
+.main-icon {
+  color: white;
+}
+
+.opacityON {
+  opacity: 0;
+}
+
+.opacityOFF {
+  opacity: 100%;
+}
+
+.white {
+  color: white;
+}
+
+.plus-icon {
+  margin-bottom: 40px; 
+}
+
+.add-concert-button {
+  margin: 500px;
+}
+
+.venue {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  margin-bottom: 40px;
+  background: rgb(237,152,57);
+  background: linear-gradient(55deg, rgba(237,152,57,1) 20%, rgba(223,106,179,1) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+b {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  margin-bottom: 40px;
+  background: rgb(237,152,57);
+  background: linear-gradient(55deg, rgba(237,152,57,1) 20%, rgba(223,106,179,1) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.welcome-text {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100;
+  font-size: 26px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.sub-welcome-text {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  margin-top: -30px;
+}
+
+.logout-btn {
+  bottom: 100px;
+}
+
+h5 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  background: rgb(237,152,57);
+  background: linear-gradient(55deg, rgba(237,152,57,1) 20%, rgba(223,106,179,1) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.event-header{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+ color: black;
+}
+
+.lineup {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 1000;
+  font-size: 24px;
+  background: rgb(237,152,57);
+  background: linear-gradient(55deg, rgba(237,152,57,1) 20%, rgba(223,106,179,1) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lineup2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: black;
+  margin-top: -8px;
+}
+
+.lineup3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+  margin-top: -8px;
+}
+
+
+.reg-login-btn {
+  margin: 5px;
+}
+
+.artist-name-display {
+  font-size: 44px;
+  color:white;
+  /* font-family: 'Play', sans-serif; */
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  font-weight: 1000;
+ 
+}
+
+.instruction-text {
+  font-family: 'Source Sans Pro', sans-serif;
+  display: inline-block;
+  text-transform: lowercase;
+  font-weight: 500;
+}
+
+.saved-event-title {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.lg-gray-card {
+  background: black;
+  margin: 20px 0px;
+  padding: 20px;
+  border-radius: 4px;
+  border: .5px solid #E78066;
+}
+
+.gray-card {
+  background: #212121;
+  margin: 20px 0px;
+  padding: 20px;
+  border-radius: 4px;
+  border: .5px solid #E78066;
+  -webkit-box-shadow: 0px 0px 49px -8px rgba(0,0,0,0.96);
+  -moz-box-shadow: 0px 0px 49px -8px rgba(0,0,0,0.96);
+  box-shadow: 0px 0px 49px -8px rgba(0,0,0,0.96);
+}
+
+.gray-card-nomargintop {
+  background: #212121;
+  margin: 0px 0px;
+  padding: 20px;
+  border-radius: 4px;
+  border: .5px solid #E78066;
+  -webkit-box-shadow: 0px 0px 49px -8px rgba(0,0,0,0.96);
+  -moz-box-shadow: 0px 0px 49px -8px rgba(0,0,0,0.96);
+  box-shadow: 0px 0px 49px -8px rgba(0,0,0,0.96);
+}
+
+.no-upcoming-show {
+  color: snow;
+  padding-top: 100px;
+}
+
+.gray-card-noborder {
+  background: #212121;
+  margin: 20px 0px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.trans-card {
+  background: black;
+  margin: 20px 0px;
+  padding: 20px;
+  border-radius: 10px;
+  border: .5px solid #E78066;
+}
+
+.artist-image {
+  -webkit-box-shadow: 0px 0px 49px -8px rgba(0,0,0,0.96);
+  -moz-box-shadow: 0px 0px 49px -8px rgba(0,0,0,0.96);
+  box-shadow: 0px 0px 49px -8px rgba(0,0,0,0.96);
+}
+
+.push-left {
+  margin-left: 0;
+  margin-right: auto;
+  display: table;
+  text-align: left;
+}
+
+.push-right {
+  margin-right: 0;
+  margin-left: auto;
+  display: table;
+}
+
+.centered-btn {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  left: 50%;
+  top: 50%;
+}
+
+
+ul {
+  text-align: left;
+}
+
+.login-box {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.verticle-center {
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.word-wrap{
+  word-wrap: break-word;
+}
+
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: .7s;
+}
+
+.padding-please{
+  margin: 25px;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
