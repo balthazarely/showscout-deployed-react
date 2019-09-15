@@ -122,7 +122,7 @@ class MainContainer extends Component {
             newFav: e.currentTarget.value
         }
         try {
-            const newFavArtist = await fetch('http://localhost:9000/auth/home', {
+            const newFavArtist = await fetch(process.env.REACT_APP_BACKEND_URL + 'auth/home', {
                 method: "POST",
                 body: JSON.stringify(newFavObj),
                 credentials: 'include',
@@ -143,7 +143,7 @@ class MainContainer extends Component {
     try {
         // console.log(fav)
         // i know that this fetch request is trying to bring up the item that i am trying to delete from the DB. but how to i ensure that i am selecting the correct one?
-        const deleteArtist = await fetch(`http://localhost:9000/auth/home/${fav.newFav}`,  {
+        const deleteArtist = await fetch(process.env.REACT_APP_BACKEND_URL + `${fav.newFav}`,  {
             method: "PUT",
             credentials: 'include',
             headers: {
@@ -164,7 +164,7 @@ class MainContainer extends Component {
     
     GetUserInfomation = async (user) => {
         try {
-            const userResponse = await fetch('http://localhost:9000/auth/home', {
+            const userResponse = await fetch(process.env.REACT_APP_BACKEND_URL + 'auth/home', {
                 credentials: 'include',
                 headers: {
                     "Content-Type": "application/json"
