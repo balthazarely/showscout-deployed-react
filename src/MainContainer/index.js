@@ -117,7 +117,7 @@ class MainContainer extends Component {
             newFav: e.currentTarget.value
         }
         try {
-            const newFavArtist = await fetch(process.env.REACT_APP_BACKEND_URL + 'auth/home', {
+            const newFavArtist = await fetch(process.env.REACT_APP_BACKEND_URL + '/auth/home', {
                 method: "POST",
                 body: JSON.stringify(newFavObj),
                 credentials: 'include',
@@ -136,7 +136,7 @@ class MainContainer extends Component {
     // The delete route
     removeArtistFromList = async (fav, e) => {
     try {
-        const deleteArtist = await fetch(process.env.REACT_APP_BACKEND_URL + `${fav.newFav}`,  {
+        const deleteArtist = await fetch(process.env.REACT_APP_BACKEND_URL + '/' + `${fav.newFav}`,  {
             method: "PUT",
             credentials: 'include',
             headers: {
@@ -157,7 +157,7 @@ class MainContainer extends Component {
     
     GetUserInfomation = async (user) => {
         try {
-            const userResponse = await fetch(process.env.REACT_APP_BACKEND_URL + 'auth/home', {
+            const userResponse = await fetch(process.env.REACT_APP_BACKEND_URL + '/auth/home', {
                 credentials: 'include',
                 headers: {
                     "Content-Type": "application/json"
