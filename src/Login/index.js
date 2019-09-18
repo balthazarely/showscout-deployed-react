@@ -20,7 +20,7 @@ class Login extends Component {
 	}
 
 	handleSubmit = async (e) => {
-		// 'http://localhost:9000/auth/'
+		
 		e.preventDefault();
 		const login = await fetch(process.env.REACT_APP_BACKEND_URL + 'auth/', {
 			method: 'POST', 
