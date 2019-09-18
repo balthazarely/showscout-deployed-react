@@ -216,10 +216,10 @@ class MainContainer extends Component {
     // Get the API data
     componentDidMount = async () => {
         //this is the artist data from the API
-            const response = await fetch(`http://rest.bandsintown.com/artists/${this.state.searchTerm}?app_id=3668f547a226ff2fa06663c1ed8d39cc`);
+            const response = await fetch(`https://rest.bandsintown.com/artists/${this.state.searchTerm}?app_id=3668f547a226ff2fa06663c1ed8d39cc`);
             const json = await response.json();
         //BANDSINTOWN VERSION
-            const response2 = await fetch(`http://rest.bandsintown.com/artists/${this.state.searchTerm}/events?app_id=3668f547a226ff2fa06663c1ed8d39cc&date=upcoming`);
+            const response2 = await fetch(`https://rest.bandsintown.com/artists/${this.state.searchTerm}/events?app_id=3668f547a226ff2fa06663c1ed8d39cc&date=upcoming`);
             const json2 = await response2.json();
         //this is the last.fm api request
             const response3 = await fetch(` http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=${this.state.simularAtist}&api_key=d6f78535b00f29193d52a517f0d13935&format=json`);
@@ -227,7 +227,7 @@ class MainContainer extends Component {
             const response4 = await fetch(` http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=${this.state.simularAtist}&api_key=d6f78535b00f29193d52a517f0d13935&format=json`);
             const json4 = await response4.json();           
         //fetch based on area
-            const response6 = await fetch(`http://api.songkick.com/api/3.0/metro_areas/${this.state.locationID}/calendar.json?apikey=viaZLZfjblo2eWh5`);
+            const response6 = await fetch(`https://api.songkick.com/api/3.0/metro_areas/${this.state.locationID}/calendar.json?apikey=viaZLZfjblo2eWh5`);
             const json6 = await response6.json();
         //artist INFO last fm
             const response7 = await fetch(`http://ws.audioscrobbler.com//2.0/?method=artist.getinfo&artist=${this.state.searchTerm}&api_key=d6f78535b00f29193d52a517f0d13935&format=json`);
