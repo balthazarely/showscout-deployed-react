@@ -24,6 +24,8 @@ export default class Instructions extends Component {
           <h4 className="instruction-text"><Button inverted className="plus-icon" color="orange" icon ><Icon name='plus'/></Button>  Adds an Artist to your Favorite Artists </h4> <br/>
           <h4 className="instruction-text"><Button  className="plus-icon" color="white" icon ><Icon name='plus'/></Button>  Adds an event to your Saved Events.  </h4>
           <h4 className="instruction-text"> To view an artist's top songs, hover your mouse over their image. To change the EVENTS NEARBY results, type your desired location into the input bar above it.  </h4>
+          <h4 className="instruction-text"> Don't forget to click the Tickets, Full Lineup, and Map buttons to see more infomation about the concert.  </h4>
+
         </Modal.Content>
         <Modal.Actions>
           <Button basic inverted color="orange" className="logout-btn" onClick={this.handleClose} >
