@@ -110,8 +110,7 @@ class MainContainer extends Component {
         
         this.setState({
             favArtists: [... this.state.favArtists, e.currentTarget.value]
-            },function(){
-        })
+            })
         console.log("you clicked ", e.currentTarget.value)
         const newFavObj = {
             newFav: e.currentTarget.value
