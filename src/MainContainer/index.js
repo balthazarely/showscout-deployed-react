@@ -103,6 +103,7 @@ class MainContainer extends Component {
             // console.log(this.state.savedEvents)
         })
     }
+    //
     
     // this should also be triggering adding the artist to the db.
     addArtistToList = async (e) => {
@@ -128,7 +129,7 @@ class MainContainer extends Component {
             // console.log(parsedResponse)
         } catch (err){
 
-        }
+        } 
     }
 
 
