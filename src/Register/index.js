@@ -8,21 +8,21 @@ class Register extends Component {
 		super();
 
 		this.state = {
-			username: '', 
+			username: '',
 			password: '',
 			location: ''
 		}
 	}
 
 	handleChange = (e) => {
-		this.setState({[e.currentTarget.name]: e.currentTarget.value});
+		this.setState({ [e.currentTarget.name]: e.currentTarget.value });
 	}
 
 	handleSubmit = async (e) => {
 		e.preventDefault();
 		console.log(process.env.REACT_APP_BACKEND_URL)
 		const register = await fetch(process.env.REACT_APP_BACKEND_URL + '/auth/register', {
-			method: 'POST', 
+			method: 'POST',
 			credentials: 'include',
 			body: JSON.stringify(this.state),
 			headers: {
@@ -31,7 +31,7 @@ class Register extends Component {
 		})
 		const parsedRegister = await register.json();
 		console.log(parsedRegister, 'response from register');
-		if(parsedRegister.status.message === 'User Logged In') {
+		if (parsedRegister.status.message === 'User Logged In') {
 			console.log('logged in');
 			this.props.history.push('/home');
 
@@ -41,41 +41,41 @@ class Register extends Component {
 
 	render() {
 		return (
-		
 
-	<div>
-	
 
-	<div className="login-box">
-		<form onSubmit={this.handleSubmit} className="ui form">
-		<h1 className="white"> Register </h1>
-				<div className="white field">
-					<h5 className="white">Username</h5>
-					<input type='text' name='username' onChange={this.handleChange}/>
-				</div>
-				<div className="white field">
-					<h5 className="white">Password</h5>
-					<input type='password' name='password' onChange={this.handleChange}/>
-				</div>
-				<div className="white field">
+			<div>
+
+
+				<div className="login-box">
+					<form onSubmit={this.handleSubmit} className="ui form">
+						<h1 className="white"> Register </h1>
+						<div className="white field">
+							<h5 className="white">Username</h5>
+							<input type='text' name='username' onChange={this.handleChange} />
+						</div>
+						<div className="white field">
+							<h5 className="white">Password</h5>
+							<input type='password' name='password' onChange={this.handleChange} />
+						</div>
+						{/* <div className="white field">
 					<h5 className="white">Location</h5>
 					<input type='text' name='location' onChange={this.handleChange}/>
-				</div>
-			
-				<div className="reg-login-btn">
-					<Button.Group>
-						<Button basic inverted color="pink" className="ui color1 button" className="reg-login-btn" type="submit">
-						Make Account
+				</div> */}
+
+						<div className="reg-login-btn">
+							<Button.Group>
+								<Button basic inverted color="pink" className="ui color1 button" className="reg-login-btn" type="submit">
+									Make Account
 					</Button>
-					<Button basic inverted color="orange" className="ui color1 button" className="reg-login-btn"  href="/">
-						Back
+								<Button basic inverted color="orange" className="ui color1 button" className="reg-login-btn" href="/">
+									Back
 					</Button>
-					</Button.Group>
+							</Button.Group>
+						</div>
+					</form>
 				</div>
-	</form>
-</div>
-</div>
-			)
+			</div>
+		)
 	}
 }
 
